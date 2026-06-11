@@ -1,0 +1,55 @@
+{
+    "seed": 42,
+    "name": "ClassificationModel",
+    "plot": true,
+    "run_val": 1,
+    "model":
+    {
+        "input_shape": 28,
+        "output_shape": 1
+    },
+    "optimizer":
+    {
+        "lr": 0.0001
+    },
+    "num_epochs": 5,
+    "dataloader":
+    {
+        "scale": true,
+        "feature_scale": [-1, 1],
+        "label_scale": [-1, 1],
+
+        "ignore_columns": 
+        [
+            "shot", 
+            "time_until_disrupt",
+            
+            "bt",
+            "n_equal_1_mode",
+            "n_equal_1_normalized",
+            "n_equal_1_phase",
+            "ne_peaking",
+            "prad_peaking",
+            "pressure_peaking",
+            "te_core_vs_avg_ece",
+            "te_edge_vs_avg_ece",
+            "te_peaking",
+            "te_width",
+            "te_width_ece"
+        ],
+        "label_column": "disruptive",
+        "data_split": [0.7, 0.15, 0.15],
+
+        "batch_sizes":
+        {
+            "training": 128,
+            "testing": 128,
+            "validation": 128
+        }
+    },
+    "output":
+    {
+        "dir":"./",
+        "filename":"classification_data"
+    }
+}

@@ -1,0 +1,71 @@
+NaN count per column:
+time                         0
+a_minor                      0
+beta_n                       0
+beta_p                       0
+bt                      122426
+chisq                        0
+dbetap_dt                    0
+dip_dt                       0
+dip_smoothed                 0
+dipprog_dt                   0
+dli_dt                       0
+dn_dt                        0
+dprad_dt                     8
+dwmhd_dt                     0
+greenwald_fraction           0
+i_efc                      426
+ip                           0
+ip_error                     0
+ip_prog                      0
+kappa                        0
+kappa_area                   0
+li                           0
+lower_gap                    0
+n_e                          0
+n_equal_1_mode          122426
+n_equal_1_normalized    122426
+n_equal_1_phase         122426
+n_over_ncrit                92
+ne_peaking              123393
+p_icrf                       0
+p_input                      0
+p_lh                         0
+p_oh                         0
+p_rad                        0
+prad_peaking            153935
+pressure_peaking        123393
+q0                           0
+q95                          0
+qstar                        0
+radiated_fraction            0
+rmagx                        0
+ssep                         0
+sxr                       2463
+tau_rad                    555
+te_core_vs_avg_ece      122804
+te_edge_vs_avg_ece      122804
+te_peaking              123393
+te_width                 99352
+te_width_ece            122804
+time_until_disrupt      353911
+tribot                       0
+tritop                       0
+upper_gap                    0
+v_loop                       0
+v_loop_efit                  0
+v_surf                       0
+v_z                          0
+wmhd                         0
+z_error                      0
+z_prog                       0
+z_times_v_z                  0
+zcur                         0
+disruptive                   0
+dtype: int64
+
+
+Reeces truncating data:
+Rows remaining vs original:    424252/526251  (80.62%)
+Columns remaining vs original: 51/65  (78.46%)
+Entries remaining vs original: 21636852/34206315  (63.25%)
