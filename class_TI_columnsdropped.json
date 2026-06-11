@@ -1,6 +1,11 @@
 {
     "seed": 42,
     "name": "ClassificationModel",
+    "gaussian_filter": 
+    {
+        "filter_by_gaussian": true, 
+        "std_dev": 10
+    },
     "plot": true,
     "run_val": 1,
     "model":
@@ -35,7 +40,19 @@
             "te_edge_vs_avg_ece",
             "te_peaking",
             "te_width",
-            "te_width_ece"
+            "te_width_ece",
+
+
+            "time",
+            "dip_smoothed",
+            "dipprog_dt",
+            "dli_dt",
+            "ip_prog",
+            "p_lh",
+            "p_oh",
+            "qstar",
+            "upper_gap"
+
         ],
         "label_column": "disruptive",
         "data_split": [0.7, 0.15, 0.15],

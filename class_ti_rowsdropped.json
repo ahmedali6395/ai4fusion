@@ -1,7 +1,7 @@
 {
     "seed": 42,
     "name": "ClassificationModel",
-    "plot": true,
+    "plot": false,
     "run_val": 1,
     "model":
     {
