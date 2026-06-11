@@ -1,0 +1,76 @@
+{
+	"seed": 42,
+	"name": "Time Independent Classification Model",
+	"gaussian_filter": 
+	{
+		"filter_by_gaussian": true,
+		"std_dev": 10
+	},
+	"plot": true,
+	"run_val": 1,
+	"model": 
+	{
+		"input_shape": 29,
+		"output_shape": 1
+	},
+	"optimizer": 
+	{
+		"lr": 0.0001
+	},
+	"num_epochs": 5,
+	"dataloader": 
+	{
+		"scale": true,
+		"feature_scale": [-1, 1],
+		"label_scale": [-1, 1],
+
+		"is_time_independent": true,
+
+		"ignore_columns": 
+		[
+			"shot",
+			"time_until_disrupt",
+			"time",
+
+			"pressure_peaking",
+			"te_peaking",
+			"ne_peaking",
+			"te_core_vs_avg_ece",
+			"te_width_ece",
+			"te_edge_vs_avg_ece",
+			"n_equal_1_phase",
+			"n_equal_1_normalized",
+			"n_equal_1_mode",
+
+			"dip_smoothed",
+			"bt",
+			"beta_n",
+			"beta_p",
+			"chisq",
+			"prad_peaking",
+			"te_width",
+			
+			"dipprog_dt",
+			"dli_dt",
+			"ip_prog",
+			"p_lh",
+			"p_oh",
+			"qstar",
+			"upper_gap"
+		],
+		"label_column": "disruptive",
+		"data_split": [0.7, 0.15, 0.15],
+
+		"batch_sizes": 
+        {
+			"training": 128,
+			"testing": 128,
+			"validation": 128
+		}
+	},
+	"output": 
+    {
+		"dir": "./",
+		"filename": "classification_data"
+	}
+}
