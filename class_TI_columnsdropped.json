@@ -50,6 +50,7 @@
             "ip_prog",
             "p_lh",
             "p_oh",
+            "qstar",
             "upper_gap"
 
         ],
