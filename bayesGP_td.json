@@ -1,6 +1,7 @@
+@ -1,72 +0,0 @@
 {
 	"seed": 42,
-	"name": "Time Dependent Classification Model",
+	"name": "Time Dependent Bayesian Gaussian Process Model",
 	"gaussian_filter": 
 	{
 		"filter_by_gaussian": true,
