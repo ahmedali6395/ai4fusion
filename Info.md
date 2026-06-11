@@ -1,5 +1,13 @@
 # **NaN count per column:**
 
+## **a_minor**
+
+_\# of NaNs: 0_
+
+Potentially - The minor radius (in m) of the plasma.
+
+_Valid Range:_ ?
+
 ## **beta_n**
 
 _\# of NaNs: 0_
@@ -15,7 +23,15 @@ instabilities."
 
 _Valid Range:_ [0.0, 2.0]
 
-## **beta_p**
+## **bt**
+
+_\# of NaNs: 122426_
+
+Toroidal magnetic field - NaNs likely a result of sensor error...
+
+_Valid Range:_ ?
+
+## **beta_p & dbetap_dt**
 
 _\# of NaNs: 0_
 
@@ -48,6 +64,14 @@ plasma current. Useful for identifying the
 
 _Valid Range:_ [-5.0e6, 5.0e6]
 
+## **dn_dt**
+
+_\# of NaNs: 0_
+
+Potentially - The derivative of plasma density. Measures how quickly the electron density is changing.
+
+_Valid Range:_ ?
+
 ## **greenwald_fraction**
 
 _\# of NaNs: 0_
@@ -64,14 +88,22 @@ disruptions”.
 
 _Valid Range:_ [0.0, 1.5]
 
-## **ip**
+## **i_efc**
+
+_\# of NaNs: 426_
+
+Potentially - Current in error field correction (EFC) coil system... compensates for magnetic field asymmetries.
+
+_Valid Range:_ ?
+
+## **ip & dip_dt & dip_smoothed**
 
 _\# of NaNs: 0_
 
 Plasma current. Main feature in
 describing the lifetime of the plasma. The
 disruption is primarily defined with
-respect to changes in this paramete
+respect to changes in this parameter.
 
 _Valid Range:_ N/A
 
@@ -86,7 +118,15 @@ changes in the plasma core.
 
 _Valid Range:_ N/A
 
-## **kappa**
+## **ip_prog**
+
+_\# of NaNs: 0_
+
+Potentially - Programmed plasma target, current the current system is trying to achieve
+
+_Valid Range:_ ?
+
+## **kappa & kappa_area**
 
 _\# of NaNs: 0_
 
@@ -96,7 +136,7 @@ becoming vertically unstable.
 
 _Valid Range:_ [0.8, 2.0]
 
-## **li**
+## **li & dli_dt**
 
 _\# of NaNs: 0_
 
@@ -179,6 +219,14 @@ displacement event (VDE) disruptions.
 
 _Valid Range:_ [-3.0, 3.0]
 
+## **ne_peaking**
+
+_\# of NaNs: 123393_
+
+Drop column - Calculated using measurements from the Thomson scattering diagnostic.
+
+_Valid Range:_ ?
+
 ## **p_icrf**
 
 _\# of NaNs: 0_
@@ -192,6 +240,12 @@ can lead to radiative collapse
 disruptions.
 
 _Valid Range:_ [0.0, inf]
+
+## **p_input**
+
+_\# of NaNs: 0_
+
+_Valid Range:_ ?
 
 ## **p_lh**
 
@@ -216,15 +270,31 @@ the total power-balance in the plasma.
 
 _Valid Range:_ [0.0, 5.0e6]
 
-## **p_rad**
+## **p_rad & dprad_dt**
 
-_\# of NaNs: 0_
+_\# of NaNs: 0 (8 for dprad_dt)_
 
 Power radiated out of plasma. Excessive
 radiation can cool the plasma and lead to
 radiative collapse disruptions.
 
 _Valid Range:_ [0.0, inf]
+
+## **prad_peaking**
+
+_\# of NaNs: 153935_
+
+Drop column - Unspecific reason
+
+_Valid Range:_ ?
+
+## **pressure_peaking**
+
+_\# of NaNs: 123393_
+
+Drop column - Calculated using measurements from the Thomson scattering diagnostic.
+
+_Valid Range:_ ?
 
 ## **q0**
 
@@ -271,6 +341,14 @@ disruptions.
 
 _Valid Range:_ [0.0, 15.0]
 
+## **rmagx**
+
+_\# of NaNs: 0_
+
+Potentially - Major radius of the magnetic axis (m), indicates radial location of the plasma's magnetic center.
+
+_Valid Range:_ ?
+
 ## **shot**
 
 _\# of NaNs: ?_
@@ -297,6 +375,62 @@ EFIT_variables
 
 _Valid Range:_ [-1.0, 1.0]
 
+## **sxr**
+
+_\# of NaNs: 2463_
+
+Potentially - Soft X-ray signal. Measures low-energy X-ray emission from the plasma and is often related to temperature, impurities, and MHD activity.
+
+_Valid Range:_ ?
+
+## **tau_rad**
+
+_\# of NaNs: 555_
+
+Potentially - Radiated power decay/growth time constant or radiation confinement time (definition depends on dataset). Usually related to how radiation losses evolve.
+
+_Valid Range:_ ?
+
+## **te_core_vs_avg_ece**
+
+_\# of NaNs: 122804_
+
+Drop column - Calculated using measurements from the Thomson scattering diagnostic.
+
+_Valid Range:_ don't worry about it
+
+## **te_edge_vs_avg_ece**
+
+_\# of NaNs: 122804_
+
+Drop column - Calculated using measurements from the Thomson scattering diagnostic.
+
+_Valid Range:_ don't worry about it
+
+## **te_peaking**
+
+_\# of NaNs: 123393_
+
+Drop column - Calculated using measurements from the Thomson scattering diagnostic.
+
+_Valid Range:_ don't worry about it
+
+## **te_width**
+
+_\# of NaNs: 99352_
+
+Drop column - Calculated using measurements from the Thomson scattering diagnostic.
+
+_Valid Range:_ don't worry about it
+
+## **te_width_ece**
+
+_\# of NaNs: 122804_
+
+Drop column - Calculated using measurements from the Thomson scattering diagnostic.
+
+_Valid Range:_ don't worry about it
+
 ## **time**
 
 _\# of NaNs: 0_
@@ -319,6 +453,14 @@ formula.
 
 _Valid Range:_ NaN or numeric
 
+## **tribot**
+
+_\# of NaNs: 0_
+
+Potentially - Bottom triangularity (δ_bottom). Describes the shape of the lower plasma boundary.
+
+_Valid Range:_ ?
+
 ## **upper_gap**
 
 _\# of NaNs: 0_
@@ -329,7 +471,7 @@ lower_gap.
 
 _Valid Range:_ [0.0, inf]
 
-## **v_loop**
+## **v_loop & v_loop_efit**
 
 _\# of NaNs: 0_
 
@@ -341,7 +483,23 @@ characteristics.
 
 _Valid Range:_ [-7.0, 7.0]
 
-## **wmhd**
+## **v_surf**
+
+_\# of NaNs: 0_
+
+Potentially - Plasma surface voltage, voltage associated with last closed flux surface.
+
+_Valid Range:_ ?
+
+## **v_z**
+
+_\# of NaNs: 0_
+
+Potentially - Vertical velocity of the plasma (m/s)
+
+_Valid Range:_ ?
+
+## **wmhd & dwmhd_dt**
 
 _\# of NaNs: 0_
 
@@ -380,75 +538,18 @@ Alcator_Parameters
 
 _Valid Range:_ [-0.5, 0.5]
 
----
+## **z_prog**
 
-a_minor 0
+_\# of NaNs: 0_
 
-bt 122426
+Potentially - Programmed vertical position target for plasma control.
 
-dbetap_dt 0
+_Valid Range:_ ?
 
-dip_dt 0
+## **z_times_v_z**
 
-dip_smoothed 0
+_\# of NaNs: 0_
 
-dli_dt 0
+Potentially - Product of vertical position and vertical velocity (z⋅v_z). Often included as a feature because it captures both displacement and motion direction, which can be useful for predicting vertical instability events.
 
-dn_dt 0
-
-dprad_dt 8
-
-dwmhd_dt 0
-
-i_efc 426
-
-ip_prog 0
-
-kappa_area 0
-
-ne_peaking 123393
-
-p_input 0
-
-prad_peaking 153935
-
-pressure_peaking 123393
-
-rmagx 0
-
-sxr 2463
-
-tau_rad 555
-
-te_core_vs_avg_ece 122804
-
-te_edge_vs_avg_ece 122804
-
-te_peaking 123393
-
-te_width 99352
-
-te_width_ece 122804
-
-tribot 0
-
-tritop 0
-
-v_loop_efit 0
-
-v_surf 0
-
-v_z 0
-
-z_prog 0
-
-z_times_v_z 0
-
-disruptive 0
-
-dtype: int64
-
-Reeces truncating data:
-Rows remaining vs original: 424252/526251 (80.62%)
-Columns remaining vs original: 51/65 (78.46%)
-Entries remaining vs original: 21636852/34206315 (63.25%)
+_Valid Range:_ ?
