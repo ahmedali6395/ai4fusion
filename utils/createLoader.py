@@ -97,7 +97,8 @@ def createLoaders(config, dataset, regression=False):
         
         to_plot = np.arange(0, (datasetX).shape[1]-1)
     
-        fig, axes = plt.subplots(6, 8, figsize=(16, 12))
+        fig, axes = plt.subplots(6, 8, figsize=(16*2, 12*2))
+        plt.tight_layout(pad=3.0) 
         axes = axes.ravel()  # flatten into 1D array
         
         for i in to_plot: 
